@@ -21,7 +21,8 @@ const BG_IMAGES = [
     'pasillo6.jpg',
     'pasillo7.jpg',
     'pasillo8.jpg',
-    'pasillo9.jpg' 
+    'pasillo9.jpg',
+    'pasillo10.jpg'
 ];
 
 const $ = id => document.getElementById(id);
