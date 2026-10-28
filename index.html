@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>El Experimento de las Sombras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>EL EXPERIMENTO DE LAS SOMBRAS</h1>
+        <div id="hp">
+            Salud Mental: <span id="hpn">100</span>%
+            <i><b id="hpb" style="width:100%"></b></i> 
+            <button id="mute" style="padding:2px 8px;margin-left:10px">🔊</button>
+        </div>
+
+        <div id="grid">
+            <div>
+                <div id="frame">
+                    <canvas id="c" width="640" height="360"></canvas>
+                    <div id="flash"></div>
+                    <div class="crt"></div>
+                </div>
+                <div id="box">
+                    <div id="txt"></div>
+                    <button id="walk">▶ CAMINAR (mantén / ↑)</button>
+                    <div id="opts"></div>
+                </div>
+            </div>
+
+            <aside>
+                <div id="note">
+                    <h3>Cuaderno de Pruebas de Psicología del Plantel</h3>
+                    <ol id="ol"></ol>
+                </div>
+                <div id="warn">
+                    Dependiendo de tu salud mental final (Bueno, Neutro o Malo), la escuela decidirá si logras escapar o quedas atrapado en el experimento
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <div id="end">
+        <div>
+            <h2 id="et"></h2>
+            <p id="ep"></p>
+            <button onclick="location.reload()">Volver a intentarlo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
