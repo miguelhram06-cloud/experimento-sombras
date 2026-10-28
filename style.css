@@ -15,6 +15,9 @@ body {
     color: #eee;
     font-family: 'Courier New', monospace;
     min-height: 100vh;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 #app {
@@ -149,6 +152,9 @@ button {
     border: 2px solid #4a4638;
     padding: 12px 8px;
     cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
 }
 
 button:hover:not(:disabled) {
@@ -178,6 +184,10 @@ button.bad {
     font-size: 12px;
     padding: 14px 22px;
     border-color: #c4161c;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: none;
 }
 
 #note {
