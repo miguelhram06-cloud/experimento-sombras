@@ -164,9 +164,14 @@ function finish() {
 }
 
 const w = $('walk');
-w.addEventListener('pointerdown', () => { startContinuousMusic(); walking = true; });
+w.addEventListener('pointerdown', e => { 
+    e.preventDefault();
+    startContinuousMusic(); 
+    walking = true; 
+});
 w.addEventListener('pointerup', () => walking = false);
 w.addEventListener('pointerleave', () => walking = false);
+w.addEventListener('touchstart', e => e.preventDefault(), {passive: false});
 
 addEventListener('keydown', e => {
     startContinuousMusic();
